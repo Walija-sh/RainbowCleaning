@@ -53,11 +53,11 @@ const Header = () => {
       </div>
     </div>
     {/* menu sm */}
-    <div className="pt-[20px] pl-[30px] pb-[5px] md:py-2.5 md:px-0   bg-black-1 flex items-center justify-between relative lg:hidden shadow-nav">
+    <div className="pt-[20px] pl-[30px] pr-[30px] pb-[5px] md:py-2.5 md:px-0   bg-black-1 flex items-center justify-between relative lg:hidden shadow-nav">
       <Link to="/" className='inline-block w-full max-w-[120px] md:max-w-[50px]'>
       <img src={assets.logo} className='w-full h-full filter brightness-[0] contrast-[100] invert'  />
       </Link>
-      <div className="grow flex items-center justify-center">
+      <div className="grow flex items-center justify-end">
         <button 
           onClick={toggleMenu}
           className="focus:outline-none"
@@ -176,7 +176,7 @@ const Header = () => {
       </div>
       {/* menu links */}
      <div className="px-[5%] min-h-[100px] relative z-[10000] mt-[-50px] ">
-       <div className=" bg-green-1 text-[18px] text-black p-2 pl-[30px] rounded-[32px]  uppercase leading-[45px] tracking-[1px] font-extrabold shadow-[0_2px_5px_rgba(0,0,0,.1)] flex items-center gap-5 max-w-[1040px] mx-auto  absolute w-[90%] left-[5%] right-[5%] top-[50%] ">
+       <div className=" bg-green-1 text-[18px] text-black p-2 py-0 pl-[30px] rounded-[32px]  uppercase leading-[45px] tracking-[1px] font-extrabold shadow-[0_2px_5px_rgba(0,0,0,.1)] flex items-center gap-5 max-w-[1040px] mx-auto  absolute w-[90%] left-[5%] right-[5%] top-[50%] ">
         <div className="grow flex items-center justify-center  gap-[20px]">
           <div className=' cursor-pointer  w-fit relative group '>
           <p className="flex items-center justify-between gap-1 transition-all duration-100 ease-in hover:text-gray-1">
@@ -241,7 +241,7 @@ const Header = () => {
         </Link>
         </div>
         {/* button */}
-        <Link to="#" className='inline-block text-center text-[18px] text-white rounded-[30px] font-bold uppercase btn-grad py-[17px] px-5 text-shadow-[0em_0.1em_0.18em_#000000] shadow-[0px_2px_18px_0px_rgba(0,0,0,0.13)]'>
+        <Link to="#" className='inline-block my-2 leading-normal text-center text-[18px] text-white rounded-[30px] font-bold uppercase btn-grad py-[17px] px-5 text-shadow-[0em_0.1em_0.18em_#000000] shadow-[0px_2px_18px_0px_rgba(0,0,0,0.13)]'>
         Book Your Cleaning
         </Link>
       </div>

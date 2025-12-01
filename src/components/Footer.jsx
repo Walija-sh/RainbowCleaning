@@ -21,7 +21,7 @@ const Footer = () => {
       <p className="text-black text-[13px] font-bold mb-[15px] ">
         Elite carpet cleaning of SAN DIEGO  is a family-owned and operated carpet cleaning company.  We value our community and regularly look for opportunities to make it better. 
       </p>
-      <div className="bg-black-1 pt-2.5 px-5 text-[14px] rounded-[10px] leading-[40px] shadow-[0px_2px_18px_0px_rgba(0,0,0,0.3)] flex gap-[15px]">
+      <div className="bg-black-1 pt-2.5 px-5 text-[14px] rounded-[10px] leading-[40px] shadow-[0px_2px_18px_0px_rgba(0,0,0,0.3)] flex gap-[15px] mb-10">
         <SlLocationPin  className='text-[32px] shrink-0 text-green-1'/>
         <div className="grid gap-2.5">
           <h5 className="uppercase roboto font-bold leading-normal text-[16px] text-green-1">
