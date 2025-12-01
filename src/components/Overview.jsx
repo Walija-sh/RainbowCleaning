@@ -8,7 +8,7 @@ const Overview = () => {
         <div className="max-w-[1340px] mx-auto w-[90%] grid gap-[30px] lg:grid-cols-2 lg:items-center">
             <div className="grid">
                 <h2 className="roboto text-[41px] font-medium text-gray-4 pb-[10px] mb-[30px] leading-[41px] text-center capitalize">
-                   Professiona Carpet Cleaning And Restoration Services In San Diego Country 
+                   Professional Carpet Cleaning And Restoration Services In San Diego Country 
 
                 </h2>
                 <p className="pb-[21px] text-[21px] text-black leading-[21px] ">

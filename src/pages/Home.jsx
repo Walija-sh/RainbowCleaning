@@ -3,10 +3,14 @@ import Cta from '../components/Cta'
 import OurExperience from '../components/OurExperience'
 import Reviews from '../components/Reviews'
 import Overview from '../components/Overview'
+import Hero from '../components/Hero'
+import Certifications from '../components/Certifications'
 
 const Home = () => {
   return (
     <div>
+      <Hero/>
+      <Certifications/>
       <Overview/>
       <Reviews/>
       <OurExperience/>

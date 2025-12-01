@@ -187,3 +187,7 @@ linear infinite;
 .cust-pag-bullet-active {
   @apply opacity-100 bg-[#575757];
 }
+
+.hero{
+        background-image: radial-gradient(circle at top left, rgba(0, 8, 48, 0.86) 13%, rgba(12, 113, 195, 0.59) 97%), url('./assets/hero-bg.jpg') !important;
+}
