@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-green-1:#00ed13;
+    --color-green-hover:#33F042;
+    --color-gray-1:#666666;
+    --color-gray-2:#414141;
+    --color-gray-3:#232323;
+    --color-gray-4:#333333;
+    --color-black-1:#121212;
+    --color-blue-highlight:#2ea3f2;
+    --color-bg-gray:#e4e4e4;
+}
+
+p,a,button,body{
+    font-family: "Arsenal", sans-serif;
+}
+.roboto{
+    font-family: "Roboto", sans-serif;
+}
+.header-banner {
+  position: relative;
+  
+
+}
+
+.header-banner .bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10%;
+    width: 1000%;
+    height: 100%;
+    background: var(--color-green-1);
+    z-index: 1;
+    -webkit-transform: skew(-43deg);
+  
+}
+.nav-text-shad{
+    text-shadow: 0em 0.1em 0.1em RGBA(255,255,255,0);
+}
+.shadow-nav{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px -6px 20px 0px;
+}
+.btn-grad{
+    background-image: linear-gradient(180deg,#0ed4ea 0%,#004be2 99%);
+}
+.cta-btn{
+    background-image: linear-gradient(180deg,#31a6f9 1%,#242eaf 100%);
+}
+.cta-btn:hover{
+    background: var(--color-black-1);
+}
+.cta-border{
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0xMjgwIDE0MFYwSDBsMTI4MCAxNDB6IiBmaWxsLW9wYWNpdHk9Ii41Ii8+PHBhdGggZD0iTTEyODAgOThWMEgwbDEyODAgOTh6Ii8+PC9nPjwvc3ZnPg==);
+    background-size: 100% 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
+    z-index: 1;
+    transform: scale(1, 1);
+}
+
+.exp-top{
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0wIDB2NjBzNTczLjA5IDgwIDEyODAgODBWMHoiIGZpbGwtb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNMCAwdjMwczU3My4wOSAxMTAgMTI4MCAxMTBWMHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMCAwczU3My4wOSAxNDAgMTI4MCAxNDBWMHoiLz48L2c+PC9zdmc+);
+    background-size: 100% 100px;
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 1;
+    transform: scale(1, 1);
+}
+.exp-bottom{
+background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNGRkZGRkYiPjxwYXRoIGQ9Ik0wIDB2NjBzNTczLjA5IDgwIDEyODAgODBWMHoiIGZpbGwtb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNMCAwdjMwczU3My4wOSAxMTAgMTI4MCAxMTBWMHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMCAwczU3My4wOSAxNDAgMTI4MCAxNDBWMHoiLz48L2c+PC9zdmc+);
+    background-size: 100% 100px;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 1;
+    transform: scale(1, 1) rotateX(180deg);
+}
+.exp-bg{
+    position: absolute;
+    inset: 0;
+}
+.exp-bg::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / .6);
+}
+.exp-bg span{
+    display: block;
+    background: url('./assets/carpet.jpg') top/cover no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+.h-border::before{
+        content: '';
+    position: absolute;
+    background: var(--color-green-1);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.h-border::after{
+    content: '';
+    width: 12px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: #fff;
+    -webkit-animation: titleanimi 3s 
+linear infinite;
+    animation: titleanimi 3s 
+linear infinite;
+}
+
+@keyframes titleanimi {
+    0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+}
+
+100% {
+    -webkit-transform: translateX(38px);
+    transform: translateX(38px);
+}
+}
