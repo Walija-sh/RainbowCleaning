@@ -179,3 +179,11 @@ linear infinite;
   height: auto !important;
   display: flex;
 }
+
+.cust-pag-bullet {
+  @apply w-2 h-full rounded-full bg-transparent opacity-40 cursor-pointer;
+}
+
+.cust-pag-bullet-active {
+  @apply opacity-100 bg-[#575757];
+}

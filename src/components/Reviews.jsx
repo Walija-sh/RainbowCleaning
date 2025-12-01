@@ -8,8 +8,9 @@ import { PiSealCheckFill } from "react-icons/pi";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-import { Navigation } from 'swiper/modules';
+import { Navigation,Pagination } from 'swiper/modules';
 import { IoChevronBackSharp, IoChevronForwardSharp } from 'react-icons/io5';
 
 const Reviews = () => {
@@ -107,6 +108,7 @@ const shouldShowReadMore = (content, maxLength = 150) => {
   const [canSlideNext, setCanSlideNext] = useState(true);
 
   const swiperRef = useRef(null);
+  const paginationRef = useRef(null);
 
   const updateNavButtons = () => {
     const swiper = swiperRef.current;
@@ -153,7 +155,7 @@ const shouldShowReadMore = (content, maxLength = 150) => {
         <div className="mb-[30px] flex-1 overflow-hidden relative">
 
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation,Pagination]}
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
               setTimeout(updateNavButtons, 50);
@@ -168,6 +170,15 @@ const shouldShowReadMore = (content, maxLength = 150) => {
             navigation={{
               nextEl: '.cust-button-next',
               prevEl: '.cust-button-prev'
+            }}
+            pagination={{
+              el: '.cust-pag',
+              clickable: true,
+              bulletClass: 'cust-pag-bullet',
+              bulletActiveClass: 'cust-pag-bullet-active',
+              renderBullet: function (index, className) {
+                return `<span class="${className} "></span>`;
+              },
             }}
             breakpoints={{
               320: { slidesPerView: 1 },
@@ -244,11 +255,16 @@ const shouldShowReadMore = (content, maxLength = 150) => {
 
             </div>
           </Swiper>
-
+             <div 
+            className="cust-pag my-[20px] mx-auto w-full max-w-[150px] h-[3px] flex items-center justify-center gap-1 relative z-50  rounded-[3px] h-[3px] bg-[#57575759] sm:hidden"
+            ref={paginationRef}
+          >
+            
+          </div>
 
 
           {/* Verified Badge */}
-          <div className="mt-[12px] mx-[28px] text-right text-[12px] flex justify-end">
+          <div className="mt-[12px] mx-[28px] text-right text-[12px] flex justify-center sm:justify-end">
             <div className='bg-[#157351] text-white flex items-center py-1 px-[14px] w-fit font-bold gap-1'>
               <span className='poppins'> Verified by Trustindex </span>
               <RiInformation2Line />
