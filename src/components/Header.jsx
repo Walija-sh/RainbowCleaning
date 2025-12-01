@@ -40,7 +40,7 @@ const Header = () => {
        <Link to="/" >
         <p className='text-[16px] font-semibold tracking-[1px] text-white text-center px-4 my-[3px] uppercase w-fit transition-all duration-100 ease-in hover:bg-green-hover lg:hover:bg-gray-2'>40+ years experience</p>
         </Link>
-        <div className="header-banner  hidden lg:grid lg:grid-cols-[40%_1fr] py-[3px] ">
+        <div className="header-banner  hidden lg:grid lg:grid-cols-[50%_1fr] py-[3px] ">
           <div className="bg"></div>
           <Link to="#" className='relative z-30' >
         <p className='text-[16px] font-semibold text-white tracking-[1px] text-left   uppercase w-fit transition-all duration-100 ease-in hover:bg-green-hover'>HAVE QUESTIONS OR SPECIFIC REQUESTS 
@@ -149,7 +149,7 @@ const Header = () => {
     </div>
     {/* menu-lg */}
     <div className="bg-white shadow-nav hidden lg:block min-h-[100px] shadow-[0px_2px_18px_0px_rgba(0,0,0,0.3)]">
-      <div className="max-w-[1170px] px-[5%] mx-auto pt-[25px] pb-[15px] grid grid-cols-2 gap-[26px]">
+      <div className="max-w-[1170px] overflow-x-hidden px-[5%] mx-auto pt-[25px] pb-[15px] grid grid-cols-2 gap-[26px]">
 <Link to="/" className='inline-block w-full max-w-[180px]'>
       <img src={assets.logo} className='w-full h-auto'  />
       </Link>
@@ -176,7 +176,7 @@ const Header = () => {
       </div>
       {/* menu links */}
      <div className="px-[5%] min-h-[100px] relative z-[10000] mt-[-50px] ">
-       <div className=" bg-green-1 text-[18px] text-black p-2 pl-[30px] rounded-[32px]  uppercase leading-[45px] tracking-[1px] font-extrabold shadow-[0_2px_5px_rgba(0,0,0,.1)] flex items-center gap-5 max-w-[1170px] mx-auto  absolute w-[90%] left-[5%] right-[5%] top-[50%] ">
+       <div className=" bg-green-1 text-[18px] text-black p-2 pl-[30px] rounded-[32px]  uppercase leading-[45px] tracking-[1px] font-extrabold shadow-[0_2px_5px_rgba(0,0,0,.1)] flex items-center gap-5 max-w-[1040px] mx-auto  absolute w-[90%] left-[5%] right-[5%] top-[50%] ">
         <div className="grow flex items-center justify-center  gap-[20px]">
           <div className=' cursor-pointer  w-fit relative group '>
           <p className="flex items-center justify-between gap-1 transition-all duration-100 ease-in hover:text-gray-1">
