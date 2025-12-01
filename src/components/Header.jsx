@@ -46,9 +46,9 @@ const Header = () => {
         <p className='text-[16px] font-semibold text-white tracking-[1px] text-left   uppercase w-fit transition-all duration-100 ease-in hover:bg-green-hover'>HAVE QUESTIONS OR SPECIFIC REQUESTS 
 </p>
         </Link>
-          <Link to="#" className='text-[20px] text-white justify-self-end relative z-30' >
+          <a href="#" target='_blank' className='text-[20px] text-white justify-self-end relative z-30' >
           <FaFacebookF />
-        </Link>
+        </a>
         </div>
       </div>
     </div>

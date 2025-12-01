@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -8,9 +8,12 @@
     --color-gray-2:#414141;
     --color-gray-3:#232323;
     --color-gray-4:#333333;
+    --color-gray-5:#767676;
     --color-black-1:#121212;
     --color-blue-highlight:#2ea3f2;
     --color-bg-gray:#e4e4e4;
+    --color-stars:#F6BB06;
+    --color-check:#4285F4;
 }
 
 p,a,button,body{
@@ -18,6 +21,9 @@ p,a,button,body{
 }
 .roboto{
     font-family: "Roboto", sans-serif;
+}
+.poppins{
+    font-family: "Poppins", sans-serif;
 }
 .header-banner {
   position: relative;
@@ -140,4 +146,36 @@ linear infinite;
     -webkit-transform: translateX(38px);
     transform: translateX(38px);
 }
+}
+
+/* Swiper */
+.cust-button-next::after{
+    display: none !important;
+}
+.cust-button-prev::after{
+    display: none !important;
+}
+
+
+/* Hide navigation on mobile */
+@media (max-width: 1023px) {
+  .cust-button-next,
+  .cust-button-prev {
+    display: none !important;
+  }
+}
+
+/* Ensure slides don't overflow */
+.swiper {
+  overflow: visible !important;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.swiper-slide {
+  height: auto !important;
+  display: flex;
 }
