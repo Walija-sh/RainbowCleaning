@@ -19,7 +19,7 @@ const Hero = () => {
                     <li>
                        <p className='font-bold'> 40+ Years of Experience</p>
                        <p>
-Proven results trusted across Odessa–Midland.</p>
+Proven results trusted across San Diego Country.</p>
                     </li>
                     <li>
                        <p className='font-bold'> 

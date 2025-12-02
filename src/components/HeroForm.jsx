@@ -3,16 +3,17 @@ import React, { useState, useRef, useEffect } from "react";
 const HeroForm = () => {
   const servicesList = [
     "Carpet Cleaning",
+    "Upholstery Cleaning",
     "Carpet Dyeing",
     "Spot Dyeing",
+    "Oriental Rugs",
     "Deodorizing",
-    "Duct Cleaning",
-    "Upholstery Cleaning",
+    "Motor Homes",
   ];
 
   const [fullName, setFullName] = useState("");
   const [contact, setContact] = useState("");
-  const [selectedService, setSelectedService] = useState(null);
+  const [selectedServices, setSelectedServices] = useState([]);
   const [errors, setErrors] = useState({});
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -29,6 +30,21 @@ const HeroForm = () => {
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
+  // Toggle service selection
+  const toggleService = (service) => {
+    if (selectedServices.includes(service)) {
+      setSelectedServices(selectedServices.filter(s => s !== service));
+    } else {
+      setSelectedServices([...selectedServices, service]);
+    }
+  };
+
+  // Remove service from selection
+  const removeService = (service, e) => {
+    e.stopPropagation();
+    setSelectedServices(selectedServices.filter(s => s !== service));
+  };
+
   // Validate on submit
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,7 +52,7 @@ const HeroForm = () => {
 
     if (!fullName.trim()) newErrors.fullName = "Full Name is required";
     if (!contact.trim()) newErrors.contact = "Phone (or email) is required";
-    if (!selectedService) newErrors.service = "Please select a service";
+    if (selectedServices.length === 0) newErrors.service = "Please select at least one service";
 
     setErrors(newErrors);
 
@@ -51,10 +67,9 @@ const HeroForm = () => {
       className="bg-white text-gray-800 border border-white rounded-sm max-w-[650px] w-full py-[40px] px-[40px] shadow-[0px_4px_4px_0px_#57647e36] rounded-t-2xl"
     >
       <div className="flex flex-col space-y-4">
-
         {/* Header */}
         <div className="mb-4 text-center">
-          <h2 className="text-[30px] roboto font-bold">Get Your Free Quote in Seconds</h2>
+          <h2 className="text-[30px] roboto font-bold">Get Your Free Quote in Minutes</h2>
         </div>
 
         {/* Full Name */}
@@ -91,57 +106,60 @@ const HeroForm = () => {
           )}
         </div>
 
-        {/* Custom Dropdown */}
+        {/* Custom Dropdown for Multiple Services */}
         <div className="w-full relative" ref={dropdownRef}>
           <label className="block mb-2 text-[14px] text-[#2c3345FF] font-medium roboto">
             Which service are you most interested in? *
           </label>
 
-          {/* Input / Pill */}
+          {/* Input / Container */}
           <div
             onClick={() => setDropdownOpen(!dropdownOpen)}
-            className={`w-full min-h-[45px] px-[15px] py-2 border border-[#ACACACFF] rounded-md text-[14px] roboto bg-white cursor-pointer flex items-center justify-between`}
+            className={`w-full min-h-[45px] px-[15px] py-2 border border-[#ACACACFF] rounded-md text-[14px] roboto bg-white cursor-pointer flex items-center justify-between ${selectedServices.length > 0 ? 'py-2' : ''}`}
           >
-            <div className="flex gap-2 items-center flex-wrap">
-              {!selectedService ? (
+            <div className="flex gap-2 items-center flex-wrap w-full">
+              {selectedServices.length === 0 ? (
                 <span className="text-[#999]">
-                  Carpet Cleaning, Duct Cleaning, Water Damage, etc.
+                  Carpet Cleaning, Upholstery Cleaning Carpet or Spot Dyeing, etc.
                 </span>
               ) : (
-                <span className="bg-[#41B883] text-white text-[12px] px-3 rounded-md flex items-center gap-[7px]">
-                  {selectedService}
-                  <button
-                    type="button"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setSelectedService(null);
-                    }}
-                    className="text-[#266D4D] hover:text-white text-xl font-bold"
+                selectedServices.map((service, index) => (
+                  <span
+                    key={index}
+                    className="bg-[#41B883] text-white text-[12px] px-3 py-1 rounded-md flex items-center gap-[7px]"
                   >
-                    ×
-                  </button>
-                </span>
+                    {service}
+                    <button
+                      type="button"
+                      onClick={(e) => removeService(service, e)}
+                      className="text-[#266D4D] hover:text-white text-lg font-bold leading-none"
+                    >
+                      ×
+                    </button>
+                  </span>
+                ))
               )}
             </div>
 
-            <span className="text-[#999]">▾</span>
+            <span className="text-[#999] ml-2 flex-shrink-0">▾</span>
           </div>
 
           {/* Dropdown List */}
           {dropdownOpen && (
-            <div className="mt-2 border border-[#ACACACFF] rounded-md bg-[#F3F3F3] h-[200px] overflow-y-auto absolute top-full left-0 right-0">
-              {servicesList.map((service, index) => (
-                <div
-                  key={index}
-                  onClick={() => {
-                    setSelectedService(service);
-                    setDropdownOpen(false);
-                  }}
-                  className="px-4 py-2 cursor-pointer text-[#737179] hover:bg-[#D1E8FD] hover:text-check"
-                >
-                  {service}
-                </div>
-              ))}
+            <div className="mt-2 border border-[#ACACACFF] rounded-md bg-[#Ffffff] h-[200px] overflow-y-auto absolute top-full left-0 right-0 z-10 roboto">
+              {servicesList.map((service, index) => {
+                const isSelected = selectedServices.includes(service);
+                return (
+                  <div
+                    key={index}
+                    onClick={() => toggleService(service)}
+                    className={`px-4 py-2 hover:bg-[#D1E8FD] hover:text-check text-[#737179] cursor-pointer ${isSelected ? 'font-bold bg-[#f3f3f3] ' : ' bg-[#ffffff]'}`}
+                  >
+                    {service}
+                    
+                  </div>
+                );
+              })}
             </div>
           )}
 
@@ -154,7 +172,7 @@ const HeroForm = () => {
         <div className="w-full text-center mt-6">
           <button
             type="submit"
-            className="w-full bg-[#2bbd18] text-white py-[9px] px-[50px] text-[15px] roboto rounded-md transition-colors duration-200"
+            className="w-full bg-[#2bbd18] text-white py-[9px] px-[50px] text-[15px] roboto rounded-md transition-colors duration-200 hover:bg-[#24a013]"
           >
             Fast, Affordable Cleaning — Get Your Free Estimate
           </button>

@@ -33,7 +33,7 @@ const OurExperience = () => {
             We have over 40 years experience
            </h4>
            <p className="text-white text-[16px] max-w-[614px] mx-auto">
-            Elite Carpet Cleaning has 50+ 5-star ratings on Google and Facebook. We try our absolute best to please our clients. We would love the opportunity to serve you! Call today for a free quote
+            Rainbow Carpet Dyeing and Cleaning has 150+ 5-star ratings. We try our absolute best to please our clients. We would love the opportunity to serve you! Call today for a free quote
            </p>
         </div>
 

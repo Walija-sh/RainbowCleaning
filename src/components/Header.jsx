@@ -54,7 +54,7 @@ const Header = () => {
     </div>
     {/* menu sm */}
     <div className="pt-[20px] pl-[30px] pr-[30px] pb-[5px] md:py-2.5 md:px-0   bg-black-1 flex items-center justify-between relative lg:hidden shadow-nav">
-      <Link to="/" className='inline-block w-full max-w-[120px] md:max-w-[50px]'>
+      <Link to="/" className='inline-block w-full max-w-[150px] '>
       <img src={assets.logo} className='w-full h-full filter brightness-[0] contrast-[100] invert'  />
       </Link>
       <div className="grow flex items-center justify-end">
@@ -84,34 +84,55 @@ const Header = () => {
               <FaChevronDown className='text-[14px] text-green-1' />
             )}
           </button>
-          <ul className={`pl-5 leading-normal ${openDropdowns.services ? 'max-h-[1000px]' : 'max-h-0'} overflow-hidden transition-all duration-300 ease-in-out`}>
+          <ul className={`pl-5 leading-normal ${openDropdowns.services ? 'max-h-[1000px]' : 'max-h-0'} overflow-hidden transition-all uppercase duration-300 ease-in-out`}>
              <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-gray-1 '>
            <Link to="#">
-            CARPET DYEING 
+           Carpet Cleaning
+     
+
             </Link>
            
           </li>
              <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-gray-1 '>
            <Link to="#">
-           SPOT DYEING 
+          Carpet Dyeing
+    
             </Link>
            
           </li>
              <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-gray-1 '>
            <Link to="#">
-          DEODORIZING 
+         Spot Dyeing
+   
             </Link>
            
           </li>
              <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-gray-1 '>
            <Link to="#">
-         MOTOR HOMES 
+        Upholstery Cleaning
+    
             </Link>
            
           </li>
              <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-gray-1 '>
            <Link to="#">
-          ORIENTAL RUSS 
+          Oriental Rugs
+     
+            </Link>
+           
+          </li>
+             <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-gray-1 '>
+           <Link to="#">
+        Deodorizing
+    
+     
+            </Link>
+           
+          </li>
+             <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-gray-1 '>
+           <Link to="#">
+           Motor Homes
+     
             </Link>
            
           </li>
@@ -149,11 +170,11 @@ const Header = () => {
     </div>
     {/* menu-lg */}
     <div className="bg-white shadow-nav hidden lg:block min-h-[100px] shadow-[0px_2px_18px_0px_rgba(0,0,0,0.3)]">
-      <div className="max-w-[1170px] overflow-x-hidden px-[5%] mx-auto pt-[25px] pb-[15px] grid grid-cols-2 gap-[26px]">
-<Link to="/" className='inline-block w-full max-w-[180px]'>
+      <div className="max-w-[1170px] overflow-x-hidden px-[5%] mx-auto pt-[25px] pb-[15px] flex items-center justify-between gap-[26px]">
+<Link to="/" className='inline-block w-full max-w-[300px]'>
       <img src={assets.logo} className='w-full h-auto'  />
       </Link>
-      <div className="grid grid-cols-2 gap-[26px]">
+      <div className="flex  items-center justify-end grow gap-[26px]">
         <div className="flex gap-[15px]">
           <FaPhone className='text-[32px] text-green-1 shrink-0' />
           <div className="uppercase">
@@ -183,34 +204,55 @@ const Header = () => {
               Services
             <FaChevronDown className='text-[14px]' />
           </p>
- <ul className=' leading-normal absolute w-[240px] top-full left-0 bg-white transition-all duration-100 ease-in hidden group-hover:block z-[10000]'>
+ <ul className=' leading-normal absolute w-[240px] top-full left-0 bg-white transition-all duration-100 ease-in hidden group-hover:block z-[10000] uppercase'>
              <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-white hover:bg-green-1 '>
            <Link to="#">
-            CARPET DYEING 
+               Carpet Cleaning
+    
+
             </Link>
            
           </li>
              <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-white hover:bg-green-1'>
            <Link to="#">
-           SPOT DYEING 
+          Carpet Dyeing
+   
             </Link>
            
           </li>
              <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-white hover:bg-green-1 '>
            <Link to="#">
-          DEODORIZING 
+           Spot Dyeing
+    
             </Link>
            
           </li>
              <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-white hover:bg-green-1 '>
            <Link to="#">
-         MOTOR HOMES 
+         Upholstery Cleaning
+   
             </Link>
            
           </li>
              <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-white hover:bg-green-1 '>
            <Link to="#">
-          ORIENTAL RUSS 
+           Oriental Rugs
+     
+            </Link>
+           
+          </li>
+             <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-white hover:bg-green-1 '>
+           <Link to="#">
+          Deodorizing
+     
+     
+            </Link>
+           
+          </li>
+             <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-white hover:bg-green-1 '>
+           <Link to="#">
+         Motor Homes
+     
             </Link>
            
           </li>
@@ -241,9 +283,9 @@ const Header = () => {
         </Link>
         </div>
         {/* button */}
-        <Link to="#" className='inline-block my-2 leading-normal text-center text-[18px] text-white rounded-[30px] font-bold uppercase btn-grad py-[17px] px-5 text-shadow-[0em_0.1em_0.18em_#000000] shadow-[0px_2px_18px_0px_rgba(0,0,0,0.13)]'>
-        Book Your Cleaning
-        </Link>
+        <a href="tel:+858-487-7262" target='_blank' className='inline-block my-2 leading-normal text-center text-[18px] text-white rounded-[30px] font-bold uppercase btn-grad py-[17px] px-5 text-shadow-[0em_0.1em_0.18em_#000000] shadow-[0px_2px_18px_0px_rgba(0,0,0,0.13)]'>
+        Call Us Now
+        </a>
       </div>
      </div>
 

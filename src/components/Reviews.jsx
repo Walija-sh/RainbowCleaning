@@ -20,84 +20,68 @@ const Reviews = () => {
     id: 1,
     name: "Barbara D",
     date: "2025-09-19",
-    content: "I needed air ducts cleaned after having had the hardwood floors refinished. Dust particles had clogged the return air duct and lines and every and spread this throughout the house. They were very polite and helpful and went to great lengths to perform the task in socks so as not to scratch the new floor finish. They wrapped the legs of their ladder with towels and even put padding on the flooring under anything that would possibly scratch the new wood floor finish. Did a great job getting difficult vents secured and did not leave any mess. I will be using them again!!",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjUlL-CTWsCZWEL6MYzzE5JIviSrI113jdHhyzma3YMwacNglF0=w40-h40-c-rp-mo-br100",
-    sourceIcon: "https://cdn.trustindex.io/assets/platform/Google/icon.svg"
+    content: "I needed spot discolorations dyed back to match my carpet color. I was amazed at the new look. I could see the experience at work.",
+    avatar: assets.review1,
+    sourceIcon: assets.googleMark
   },
   {
     id: 2,
     name: "Vickie Storie",
     date: "2025-09-05",
     content: "My old carpet looks new. Very clean. They were professional, personable, knowledgeable and kind. Will use them again.",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjWEhcWhm1v7HzHaHLCGsAoEmzlfln0PKhiQo2jcqlBBoJk1PQB2=w40-h40-c-rp-mo-br100",
-    sourceIcon: "https://cdn.trustindex.io/assets/platform/Google/icon.svg"
+    avatar: assets.review2,
+    sourceIcon: assets.googleMark
   },
   {
     id: 3,
     name: "Cristal Gutierrez",
     date: "2025-09-02",
-    content: "Elite carpet cleaners is the best company I have used for my carpet and air vent needs. They did an excellent job cleaning my vents and carpet before moving into my house. I even called them when I accidentally spilled laundry detergent in my vehicle and they were able to clean it out no questions asked. They are a very professional and efficient company and I will no doubt use them again in the future. The owners are very responsive and display \"elite\" customer service. Thank you! 😊",
-    avatar: "https://lh3.googleusercontent.com/a/ACg8ocL8AmBZoOf_-8EYKrbxm_T1Yg59lnc811nq8Tpr0mQ6u2Ydig=w40-h40-c-rp-mo-br100",
-    sourceIcon: "https://cdn.trustindex.io/assets/platform/Google/icon.svg"
+    content: "Rainbow carpet is the best company I've used for my carpet needs. Cleaned up beautifully and repaired bleach stains i created. I'd recommend to anyone",
+    avatar:assets.review3,
+    sourceIcon: assets.googleMark
   },
   {
     id: 4,
     name: "Kenzie M",
     date: "2025-08-29",
-    content: "Michael and his family did such an outstanding job! They were quick and responsive. Definitely will be using them in the future!",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjV29KGDJXcJKDetCxCqILwWkms5rtd0QrBjbO15kOe7N3S76igE=w40-h40-c-rp-mo-br100",
-    sourceIcon: "https://cdn.trustindex.io/assets/platform/Google/icon.svg"
+    content: "The guys did such an outstanding job! They were quick  and efficient. Will definitely use again in the future.",
+    avatar: assets.review4,
+    sourceIcon: assets.googleMark
   },
   {
     id: 5,
     name: "santiago aviles",
     date: "2025-07-19",
-    content: "Michael at Elite Carpet Cleaning did an outstanding job! He was professional, punctual, and the pricing was very reasonable. His attention to detail really stood out my carpets look brand new. Highly recommend Elite Carpet Cleaning if you're looking for quality work at a fair price.",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjWFrdszuOuinA1JGL1sr69iTkxkfGgfRupTw5hqoITfiaiSdE8h=w40-h40-c-rp-mo-ba3-br100",
-    sourceIcon: "https://cdn.trustindex.io/assets/platform/Google/icon.svg"
+    content: "Craig at Rainbow Carpet Dyeing and Cleaning did an outstanding job! He was professional, punctual, and the pricing was very reasonable. His attention to detail really stood out. My carpets are looking new again' Thank You!",
+    avatar: assets.review5,
+    sourceIcon: assets.googleMark
   },
   {
     id: 6,
     name: "Takeah Joyner",
     date: "2025-07-17",
-    content: "Elite Carpet Cleaning did an amazing job cleaning my carpet. I'm so impressed with how clean everything looks. Not only does the carpet look fresh, but my whole house smells so much better now. I'm beyond satisfied and would highly recommend them to anyone looking for top-notch carpet cleaning. Thank you Elite Carpet Cleaning!",
-    avatar: "https://lh3.googleusercontent.com/a/ACg8ocKaLffJt4xPFC5FRWcBEv-w2lIa1mKypd1CCM2Uby8sgDQwDQ=w40-h40-c-rp-mo-br100",
-    sourceIcon: "https://cdn.trustindex.io/assets/platform/Google/icon.svg"
+    content: "Rainbow Carpet did an amazing job dyeing my carpets. I'm so impressed to see my carpets with the fresh vibrant color again. I would highly recommend  using them.",
+    avatar: assets.review6,
+    sourceIcon: assets.googleMark
   },
   {
     id: 7,
     name: "steven chen",
     date: "2025-07-16",
-    content: "Michael is an honest man and operates with integrity. We need more business owners like him who operate out of integrity instead of using fear tactics to upsell procedures.\n\nYou're a good man Michael. Keep up the amazing work!",
-    avatar: "https://lh3.googleusercontent.com/a/ACg8ocJx82Rn_-N1mVrR9n8ZefrdrCPkSielyAtiwUrFedy0Z-FN0g=w40-h40-c-rp-mo-br100",
-    sourceIcon: "https://cdn.trustindex.io/assets/platform/Google/icon.svg"
+    content: "Craig is an honest man and operates with integrity. We could use more like him. Plus he does great work.",
+    avatar: assets.review7,
+    sourceIcon: assets.googleMark
   },
   {
     id: 8,
     name: "John Banksy",
     date: "2025-07-09",
-    content: "They did an amazing job. They came out the same day I called them. We had just moved into a rental and it was thrashed the carpets \" had been cleaned\" by another company here in town according to the landlord before we moved into but they were gross. We called elite and explained the situation. They told me they had an opening on Thursday of that week but I explained to the girl in the phone that I really wanted the carpets cleaned that day before we moved into our furniture. She was able to accommodate and send someone out that afternoon. The owner came out he was great very thorough and reasonable price. Would definitely recommend and we will be using their services again for all our carpet cleaning.",
-    avatar: "https://lh3.googleusercontent.com/a/ACg8ocJxMS5K05KUYEon2FteldaD-DBYGoOB6rIpuB8ITssv3BnPeA=w40-h40-c-rp-mo-br100",
-    sourceIcon: "https://cdn.trustindex.io/assets/platform/Google/icon.svg"
+    content: "They did a super job on a very soiled carpet and upholstery. We needed the work done quickly and they were able to accomodate. A definite yes for Rainbow..",
+    avatar: assets.review8,
+    sourceIcon: assets.googleMark
   },
-  {
-    id: 9,
-    name: "Hayli",
-    date: "2025-06-27",
-    content: "These guys are amazing. We are renters, and our A/C unit & waster connections were leaking into the bedrooms wall/floor. Causing our tile to lift, and water to seep through the floor. Landlord contact this company, and Michael and his son were so responsive and quick to get to the root of the problem. A couple days later, the rooms including walls are completely dry like nothing happened. Would recommend to anyone needing this specific work! You won't be disappointed.",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjUXnZtMWzTPxX1zicbInUP7NrRevDquLXpyrseQW8ByZsulw5l6=w40-h40-c-rp-mo-br100",
-    sourceIcon: "https://cdn.trustindex.io/assets/platform/Google/icon.svg"
-  },
-  {
-    id: 10,
-    name: "Amadio Lopes",
-    date: "2025-06-02",
-    content: "Absolutely the best experience I've had with a carpet cleaning company. I called and needed same day service and they showed up a couple hours later. Carpets look great, I'll never use another company again.",
-    avatar: "https://lh3.googleusercontent.com/a/ACg8ocLw7mBb1ieMCgDGd03hJX0mphV9PfIXCw3JyqLvBN5JvhqK3w=w40-h40-c-rp-mo-br100",
-    sourceIcon: "https://cdn.trustindex.io/assets/platform/Google/icon.svg"
-  }
 ];
-const shouldShowReadMore = (content, maxLength = 150) => {
+const shouldShowReadMore = (content, maxLength = 160) => {
   return content.length > maxLength;
 };
 
@@ -166,6 +150,7 @@ const shouldShowReadMore = (content, maxLength = 150) => {
               updateNavButtons();
             }}
             spaceBetween={16}
+            loop={'true'}
             slidesPerView={'auto'}
             navigation={{
               nextEl: '.cust-button-next',
@@ -256,7 +241,7 @@ const shouldShowReadMore = (content, maxLength = 150) => {
             </div>
           </Swiper>
              <div 
-            className="cust-pag my-[20px] mx-auto w-full max-w-[150px] h-[3px] flex items-center justify-center gap-1 relative z-50  rounded-[3px] h-[3px] bg-[#57575759] sm:hidden"
+            className="cust-pag my-[20px] mx-auto w-fit max-w-[150px] h-[3px] flex items-center justify-center gap-1 relative z-50  rounded-[3px] h-[3px] bg-[#57575759] sm:hidden"
             ref={paginationRef}
           >
             

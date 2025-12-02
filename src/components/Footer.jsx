@@ -15,8 +15,8 @@ const Footer = () => {
           <img src={assets.footerbg} className='w-full  h-[100px] lg:h-[40px]' alt="" />
         </div>
       <div className={`pt-10 pr-[50px] pl-[10%] lg:pl-[30%] grid  bg-green-1`}>
-        <Link to="/" className='inline-block w-full max-w-[150px] mb-5'>
-      <img src={assets.logo} className='w-full h-full filter brightness-[0] contrast-[100] invert'  />
+        <Link to="/" className='inline-block w-full max-w-[150px] md:max-w-[300px] mb-5'>
+      <img src={assets.logo} className='w-full h-full'  />
       </Link>
       <p className="text-black text-[13px] font-bold mb-[15px] ">
         Elite carpet cleaning of SAN DIEGO  is a family-owned and operated carpet cleaning company.  We value our community and regularly look for opportunities to make it better. 
@@ -42,33 +42,45 @@ const Footer = () => {
         <span className='h-[3px] bg-white w-[50px] inline-block absolute left-0 bottom-0 transition-all duration-150 ease-in group-hover:w-[50%] max-w-[400px]'></span>
       </h3>
         <div className=" roboto uppercase font-bold text-white">
-        <ul className='grid gap-[15px] text-[13px]'>
+        <ul className='grid gap-[15px] text-[13px] uppercase'>
           <li className='flex gap-[15px] items-center'>
             <FiChevronsRight className='text-green-1 text-[15px]' />
-            <p>CARPET CLEANING </p>
-          </li>
-          <li className='flex gap-[15px] items-center'>
-            <FiChevronsRight className='text-green-1 text-[15px]' />
-            <p>RUG CLEANING 
+            <p>  Carpet Cleaning
+    
  </p>
           </li>
           <li className='flex gap-[15px] items-center'>
             <FiChevronsRight className='text-green-1 text-[15px]' />
-            <p>CARPET DYEING 
+            <p> Carpet Dyeing
+    
+ </p>
+          </li>
+          <li className='flex gap-[15px] items-center'>
+            <FiChevronsRight className='text-green-1 text-[15px]' />
+            <p>Spot Dyeing
+  
 </p>
           </li>
           <li className='flex gap-[15px] items-center'>
             <FiChevronsRight className='text-green-1 text-[15px]' />
-            <p>SPOT DYEING 
+            <p>  Upholstery Cleaning
+    
  </p>
           </li>
           <li className='flex gap-[15px] items-center'>
             <FiChevronsRight className='text-green-1 text-[15px]' />
-            <p>Upholstery Cleaning </p>
+            <p>Oriental Rugs
+ </p>
           </li>
           <li className='flex gap-[15px] items-center'>
             <FiChevronsRight className='text-green-1 text-[15px]' />
-            <p>DEODORIZING </p>
+            <p>     Deodorizing
+</p>
+          </li>
+          <li className='flex gap-[15px] items-center'>
+            <FiChevronsRight className='text-green-1 text-[15px]' />
+            <p>          Motor Homes
+</p>
           </li>
         </ul>
       </div>
@@ -84,10 +96,7 @@ const Footer = () => {
               </div>
     </div>
  </div>
- {/* bottom */}
- <div className="py-[15px] px-[50px] bg-green-1 text-white text-center text-[14px] uppercase font-medium">
-  Designed by Ease Web Dev  © 2022 All Rights Reserved
- </div>
+
     </div>
   )
 }
