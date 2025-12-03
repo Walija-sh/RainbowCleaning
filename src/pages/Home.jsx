@@ -5,17 +5,18 @@ import Reviews from '../components/Reviews'
 import Overview from '../components/Overview'
 import Hero from '../components/Hero'
 import Certifications from '../components/Certifications'
-
+import GallerySection from '../components/Gallery'
 const Home = () => {
   return (
     <div>
-      <Hero/>
-      <Certifications/>
-      <Overview/>
-      <Reviews/>
-      <OurExperience/>
+      <Hero />
+      <Certifications />
+      <Overview />
+      <Reviews />
+      <OurExperience />
+      <GallerySection />
       <div className="h-[100px] bg-white w-full"></div>
-      <Cta/>
+      <Cta />
     </div>
   )
 }

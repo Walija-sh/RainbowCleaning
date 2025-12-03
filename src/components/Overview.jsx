@@ -15,7 +15,7 @@ const Overview = () => {
                     At Rainbow Carpet Dyeing and Cleaning, we’re a family-owned business. With over 40 years of experience and <Link to="#" className="text-check font-bold">IICRC Certification</Link>, our expert team is equipped to handle your toughest cleaning challenges. We offer reliable, top-rated services that our customers trust. Our motto, “We take the stress out of your mess,” reflects our commitment to providing hassle-free, effective cleaning solutions.
                 </p>
                 <p className="pb-[21px] text-[21px] text-black leading-[21px] mb-[30px] ">
-                    We use the latest technology for all of our services. Our deep-cleaning methods are designed to remove dirt, stains, and allergens, leaving your home or office looking and feeling fresh. We’re also proud to offer <span className='font-bold'>oriental rug cleaning</span> and specialized care for area rugs, using the most advanced cleaning techniques available.
+                    We use the latest technology for all of our services. Our deep-cleaning methods are designed to remove dirt, stains, and allergens, leaving your home or office looking and feeling fresh.
                 </p>
                 <Link to="#" className='inline-block w-fit  justify-self-center md:justify-self-start  text-[20px]  text-white font-bold rounded-[30px] py-[6px] px-[20px]  bg-[#37d123] uppercase transition-all duration-100 ease-in  text-shadow-[0em_0.1em_0.1em_rgba(0,0,0,0.4)]  shadow-[0px_2px_18px_0px_rgba(12,113,195,0.63)] leading-[34px]'>
                             Request a Quote</Link>
