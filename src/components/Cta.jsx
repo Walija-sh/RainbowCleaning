@@ -10,7 +10,7 @@ const Cta = () => {
           Need Cleaning advice? Ask our experts for free.
         </p>
         <a
-          href="tel:+1-858-487-7262"
+          href="tel:858-487-7262"
           target="_blank"
           className="inline-block w-fit mx-auto lg:mx-0 mt-[15px] lg:mt-0 text-white py-[15px] px-[50px] shadow-[18px_6px_18px_0px_rgba(0,0,0,0.3)] cta-btn uppercase rounded-[30px] transition-all duration-100 ease-in text-right"
         >

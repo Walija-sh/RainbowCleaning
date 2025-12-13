@@ -6,6 +6,9 @@ import { IoMenu, IoClose } from "react-icons/io5";
 import { FaChevronDown } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
+import Dialog from "./Dialog";
+import HeroForm from "./HeroForm";
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,6 +34,9 @@ const Header = () => {
       [dropdownName]: !prev[dropdownName]
     }));
   };
+
+  const [quoteOpen, setQuoteOpen] = useState(false);
+
 
   return (
     <div className="">
@@ -153,7 +159,7 @@ const Header = () => {
             <ul className={`pl-5 leading-normal ${openDropdowns.locations ? 'max-h-[1000px]' : 'max-h-0'} overflow-hidden transition-all duration-300 ease-in-out`}>
               <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-gray-1 '>
                 <Link to="#">
-                  GREATER SAN DIEGO COUNTRY
+                  GREATER SAN DIEGO COUNTY
                 </Link>
 
               </li>
@@ -180,7 +186,7 @@ const Header = () => {
               <div className="uppercase">
                 <p className='text-black font-bold roboto text-[19px]'>Phone</p>
                 <a
-                  href="tel:+1-858-487-7262"
+                  href="tel:858-487-7262"
                   target="_blank"
                   className="text-blue-highlight font-bold text-[16px]"
                 >
@@ -271,7 +277,7 @@ const Header = () => {
                 <ul className=' leading-normal hidden group-hover:block absolute w-[240px] top-full left-0 bg-white transition-all duration-100 ease-in z-[10000]'>
                   <li className='py-3 px-5 cursor-pointer transition-all duration-100 ease-in hover:text-white hover:bg-green-1 '>
                     <Link to="#">
-                      GREATER SAN DIEGO COUNTRY
+                      GREATER SAN DIEGO COUNTY
                     </Link>
 
                   </li>
@@ -280,16 +286,17 @@ const Header = () => {
                 </ul>
               </div>
 
-              <Link
-                to="#"
-                className=' cursor-pointer transition-all duration-100 ease-in hover:text-gray-1 '
+              <button
+                onClick={() => setQuoteOpen(true)}
+                className='cursor-pointer'
               >
                 Free Quote
-              </Link>
+              </button>
+
             </div>
             {/* button */}
             <a
-              href="tel:+1-858-487-7262"
+              href="tel:858-487-7262"
               target="_blank"
               className="inline-block my-2 leading-normal text-center text-[18px] text-white rounded-[30px] font-bold uppercase btn-grad py-[17px] px-5 text-shadow-[0em_0.1em_0.18em_#000000] shadow-[0px_2px_18px_0px_rgba(0,0,0,0.13)]"
             >
@@ -300,7 +307,16 @@ const Header = () => {
         </div>
 
       </div>
+      <Dialog open={quoteOpen} onClose={() => setQuoteOpen(false)}>
+        <div className="p-6">
+          <HeroForm onSuccess={() => setQuoteOpen(false)} />
+        </div>
+      </Dialog>
     </div>
+
+
+
+
   )
 }
 

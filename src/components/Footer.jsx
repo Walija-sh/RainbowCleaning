@@ -89,8 +89,8 @@ const Footer = () => {
             <FaPhone className='text-[20px] text-green-1 shrink-0' />
             <div className="uppercase grid gap-2.5">
               <p className='text-green-1 font-bold roboto text-[16px]'>Get Free Estimates</p>
-              <a href="tel:+858-487-7262" target='_blank' className='text-white text-[20px] leading-[40px] font-bold lg:text-[30px]'>
-                (858) 487-7262
+              <a href="tel:858-487-7262" target='_blank' className='text-white text-[20px] leading-[40px] font-bold lg:text-[30px]'>
+                858-487-7262
               </a>
             </div>
           </div>
