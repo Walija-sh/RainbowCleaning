@@ -165,13 +165,16 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <Link
-            to="#"
-            className='block py-2.5 px-[24px] cursor-pointer transition-all duration-100 ease-in hover:text-gray-1'
-            onClick={() => setIsMenuOpen(false)}
+          <button
+            onClick={() => {
+              setQuoteOpen(true);
+              setIsMenuOpen(false);
+            }}
+            className='block w-full text-left py-2.5 px-[24px]'
           >
             Free Quote
-          </Link>
+          </button>
+
         </div>
       </div>
       {/* menu-lg */}
