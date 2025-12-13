@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { toast } from "sonner";
 
-const FORMSPREE_URL = "https://formspree.io/f/manrvkjl";
+const FORMSPREE_URL = "https://formspree.io/f/xanrvkbl";
 
 const HeroForm = () => {
   const servicesList = [
