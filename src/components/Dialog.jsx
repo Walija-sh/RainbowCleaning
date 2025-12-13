@@ -21,7 +21,7 @@ const Dialog = ({ open, onClose, children }) => {
       />
 
       {/* modal */}
-      <div className="relative z-10 mt-20 max-w-[500px] w-full mx-4 bg-white rounded-lg overflow-auto max-h-[90vh]">
+      <div className="relative z-50 mt-20 max-w-[500px] w-full mx-4 bg-white rounded-lg overflow-auto max-h-[90vh]">
         
         {/* close icon */}
         <button

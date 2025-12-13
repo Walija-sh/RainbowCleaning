@@ -210,7 +210,7 @@ const Header = () => {
           </div>
         </div>
         {/* menu links */}
-        <div className="px-[5%] min-h-[100px] relative z-[10000] mt-[-50px] ">
+        <div className="px-[5%] min-h-[100px] relative  mt-[-50px] ">
           <div className=" bg-green-1 text-[18px] text-black p-2 py-0 pl-[30px] rounded-[32px]  uppercase leading-[45px] tracking-[1px] font-extrabold shadow-[0_2px_5px_rgba(0,0,0,.1)] flex items-center gap-5 max-w-[1040px] mx-auto  absolute w-[90%] left-[5%] right-[5%] top-[50%] ">
             <div className="grow flex items-center justify-center  gap-[20px]">
               <div className=' cursor-pointer  w-fit relative group '>
